@@ -11,7 +11,8 @@ const App = () => {
   return (
     <ScrollView>
       <SafeAreaView>
-        <ColorChange />
+        //Here you Can call any Component for checking result from folder
+        <RegisterForm />
       </SafeAreaView>
     </ScrollView>
   )
