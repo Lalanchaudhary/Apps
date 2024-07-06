@@ -12,7 +12,11 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.74.2",
-    "react-native-neomorph-shadows": "^1.1.2"
+    "react-native-elements": "^3.4.3",
+    "react-native-neomorph-shadows": "^1.1.2",
+    "react-native-paper": "^5.12.3",
+    "react-native-radio-button-group": "^1.0.4",
+    "react-native-table-component": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

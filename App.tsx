@@ -6,13 +6,16 @@ import OtpVerification from './Folders/OtpVerification'
 import StopWatch from './Folders/StopWatch'
 import Parent from './Folders/Parent'
 import ColorChange from './Folders/ColorChange'
+import Table from './Folders/Table'
+import Redio_btns from './Folders/Redio_btns'
 
 const App = () => {
   return (
     <ScrollView>
       <SafeAreaView>
-        //Here you Can call any Component for checking result from folder
-        <RegisterForm />
+        {/* //Here you Can call any Component for checking result from folder */}
+        <Redio_btns />
+
       </SafeAreaView>
     </ScrollView>
   )
