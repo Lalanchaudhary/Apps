@@ -14,7 +14,15 @@ const App = () => {
     <ScrollView>
       <SafeAreaView>
         {/* //Here you Can call any Component for checking result from folder */}
-        <Redio_btns />
+
+        
+        {/* <RegisterForm /> */}
+        {/* <Calculator /> */}
+        {/* <OtpVerification /> */}
+        {/* <StopWatch /> */}
+        {/* <Parent /> */}
+        {/* <Table /> */}
+        {/* <Redio_btns /> */}
 
       </SafeAreaView>
     </ScrollView>
