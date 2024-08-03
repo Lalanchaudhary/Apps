@@ -8,12 +8,12 @@ import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const DrawerList = [
   { icon: 'picture', label: 'Primary', navigateTo: 'Home' },
-  { icon: 'tago', label: 'Promotion', navigateTo: 'Profile' },
+  { icon: 'tago', label: 'Promotion', navigateTo: 'profile' },
   { icon: 'addusergroup', label: 'Social', navigateTo: 'Primary' },
 ];
 
 const DrawerList2 = [
-  { icon: 'star-outline', label: 'Starred', navigateTo: 'Home' },
+  { icon: 'star-outline', label: 'Starred', navigateTo: 'pdf' },
   { icon: 'clock-outline', label: 'Snoozed', navigateTo: 'Profile' },
   { icon: 'arrow-right-bold-outline', label: 'Important', navigateTo: 'Primary' },
   { icon: 'send-clock-outline', label: 'Scheduled', navigateTo: 'Profile' },

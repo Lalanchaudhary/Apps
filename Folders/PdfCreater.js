@@ -23,13 +23,12 @@ const PdfCreater = () => {
                 width:250,
                 height:100,
                 Color:'red'
-            })
-            page.drawImage(comply,'png',{
-                x:25,
-                y:400,
-                with:150,
-                height:60
-            })
+            }),
+            page.drawLine({
+                start: { x: 50, y: 370 },
+                end: { x: 500, y: 370 },
+                thickness: 2,
+            });
             const pdfByte=await pdfDoc.saveAsBase64({dataUri:false});
             const pdfPath=`${RNFS.ExternalDirectoryPath}/firstPdf.pdf`;
             await RNFS.writeFile(pdfPath,pdfByte,'base64');

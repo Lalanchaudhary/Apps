@@ -5,21 +5,17 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { DrawerActions, NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
-import RegisterForm from './Folders/RegisterForm';
-import Calculator from './Folders/Calculator';
-import OtpVerification from './Folders/OtpVerification';
-import StopWatch from './Folders/StopWatch';
 import Icon from 'react-native-vector-icons/Feather';
 import Icon1 from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon2 from 'react-native-vector-icons/FontAwesome5';
 import Home from './Screens/Home';
 import Profile from './Screens/Profile';
 import DrawerContent from './DrawerContent';
-import DraweDesign from './Components/DraweDesign';
 import lalan from './Assets/lalan.jpg';
 import { TextInput } from 'react-native-gesture-handler';
 import Primary from './Screens/Primary';
 import Promotion from './Screens/Promotion';
+import PdfCreater from './Folders/PdfCreater';
 
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -32,6 +28,7 @@ const StackNav = () => {
       <Stack.Screen name='profile' component={Profile} />
       <Stack.Screen name='Primary' component={Primary} />
       <Stack.Screen name='Promotion' component={Promotion} />
+      <Stack.Screen name='pdf' component={PdfCreater} />
     </Stack.Navigator>
   )
 }
@@ -70,7 +67,7 @@ const TabNav = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="profile"
         component={Profile}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -83,6 +80,10 @@ const TabNav = () => {
     </Tab.Navigator>
   )
 }
+
+const DrawerNav=()=>{
+
+}
 const App = () => {
   return (
     <NavigationContainer>
@@ -93,8 +94,6 @@ const App = () => {
         }}
       >
       <Drawer.Screen name='TabNav' component={TabNav} />
-       <Drawer.Screen name='StackNav' component={StackNav} />
-
       </Drawer.Navigator>
     </NavigationContainer>
   );
